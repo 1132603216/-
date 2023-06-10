@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./static/css/login.css">
+    <script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="./static/js/common.js"></script>
+    <script defer src="./static/js/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>登录</h1>
+        <form accept="/index.html" onsubmit="return submit_()" method="post">
+            <label for="username">账号</label>
+            <input type="text" required>
+
+            <label for="password">密码</label>
+            <input id="pw" type="password" required>
+
+            <input type="submit" id="submit" value="登录">
+            <a id="change" href="javascript:change()">没有账户？点击注册</a>
+        </form>
+    </div>
+
+</body>
+</html>

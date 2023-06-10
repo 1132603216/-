@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>个人中心</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="./static/js/common.js"></script>
+    <script defer src="./static/js/person.js"></script>
+    <link rel="stylesheet" href="./static/css/person.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>个人中心</h1>
+            <img src="./static/img/default.webp" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="info person">
+            <h2>个人信息</h2>
+            <hr>
+            <div class="info-person">
+                <div>
+                    <span class="key">昵称：</span>
+                    <span class="value">你妈</span>
+                    <input hidden class="update" type="text">
+                </div>
+                <div>
+                    <span class="key">性别：  </span>
+                    <span class="value">男</span>
+                    <!-- <input class="update" hidden type="text"> -->
+                    <select hidden class="update" name="sex">
+                        <option value="0" selected>女</option>
+                        <option value="1">男</option>
+                    </select>
+                </div>
+                <div>
+                    <span class="key">账号：</span>
+                    <span class="value">hello nkdsn</span>
+                    <!-- <input hidden class="update" type="text" readonly> -->
+                </div>
+                <div>
+                    <input type="file" id="f1" hidden>
+                    <button onclick="input.click()" class="button">更换头像</button>
+                </div>
+                <div> <button class="button" onclick="updatePw()">修改密码</button></div>
+                <div> <button class="button" onclick="updateInfo(this)">修改基本信息</button></div>
+            </div>
+
+
+        </div>
+        <div class="info friends">
+            <h2>好友列表</h2>
+<button class="button" onclick="addFriend()">添加好友</button>
+            <hr>
+            
+<!-- <div class="friend">
+    <div class="user">
+        <img src="./static/img/default.webp" alt="">
+        <span class="username">用户名</span>
+    </div>
+    <button class="del">删除</button>
+</div>
+<hr> -->
+            
+        </div>
+        <div class="info post">
+            <h2>发帖</h2>
+            <textarea id="" cols="30" rows="10"></textarea>
+            <button class="button" onclick="post(this)">发布</button>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>基础病科普平台</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" href="./static/css/index.css">
+    <script src="https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js"></script>
+    <script defer src="./static/js/common.js"></script>
+    <script defer src="./static/js/index.js"></script>
+    
+        
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img onclick="intoPerson()" src="./static/img/default.webp"></a>
+        </div>
+        <h1>基础病科普平台</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:invitation()">帖子</a></li>
+                <li>
+                    <form action="index.html" onsubmit="return search_()">
+                        <input id="search" type="text" placeholder="搜索">
+                        <button type="submit">搜索</button>
+                    </form>
+                </li>
+                <li><a onclick="login(this)" id="login" href="login.html">登录</a></li>
+                <li><a id="reg" href="login.html#reg">注册</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        
+    </main>
+
+</body>
+
+</html>
