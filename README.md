@@ -14,7 +14,7 @@
 
 
 
-![功能](功能.jpg)
+[![功能](功能.jpg)](https://github.com/1132603216/underlying-disease/blob/main/%E5%8A%9F%E8%83%BD.jpg)
 
 # 演示
 
