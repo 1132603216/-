@@ -14,9 +14,18 @@
 
 
 
-[![功能](功能.jpg)](https://github.com/1132603216/underlying-disease/blob/main/%E5%8A%9F%E8%83%BD.jpg)
+![功能](功能.jpg)
 
 # 演示
 
 <video width="640" height="480" controls>         <source src="基础病平台.mp4" type="video/mp4">         Your browser does not support the video tag.     </video>
 
+# 使用
+导入数据库文件：
+
+init.sql
+
+启动
+``` python
+python manage.py runserver 8080
+```
